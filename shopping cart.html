@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PRODUCTS - The Martin Garrix Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Martin Garrix Icon Logo.png" alt="+x" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ACCOUNT</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="25px" height="25px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+<!------ cart item details ------>
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>SUBTOTAL</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/MIAMIBLACKBACK.jpg">
+                    <div>
+                        <p>STMPD MIAMI '25 BLACK T-Shirt</p>
+                        <small>&#8377 4,000.00</small>
+                        <br>
+                        <a href="">REMOVE</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1" max="100"></td>
+            <td>&#8377 4,000.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>SubTotal</td>
+                <td>&#8377 4,000.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>&#8377 00.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>&#8377 4,000.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!------ footer ------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App For Android and Ios.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-martin-stmpd.png">
+                <p>OFFICIAL MARTIN GARRIX SHOP</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li>Return Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Shipping Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>STAY CONNECTED</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Spotify</li>
+                </ul>            
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&#169;Martin Garrix 2025</p>
+    </div>
+</div>
+<!------ js for toggle menu ------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if (MenuItems.style.maxHeight == "0px") 
+        {
+            MenuItems.style.maxHeight = "200px"  
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px" 
+        }
+    }
+</script>
+</body>
+</html>  
